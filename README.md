@@ -12,8 +12,4 @@ Home / Dashboard
 │   └── Quick Actions
 Footer
 # personal-book-tracker
-# personal-book-tracker
-# personal-book-tracker
-# personal-book-tracker
-# personal-book-tracker
-# personal-book-tracker
+

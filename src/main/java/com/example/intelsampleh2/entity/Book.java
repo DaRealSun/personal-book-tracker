@@ -15,10 +15,11 @@ import jakarta.validation.constraints.NotBlank;
 public class Book {
 
     // Parameterized Constructor
-    public Book(String title, String author, String category) {
+    public Book(String title, String author, String category, ReadingStatus status) {
         this.title = title;
         this.author = author;
         this.category = category;
+        this.status = status;
     }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,4 +36,8 @@ public class Book {
     @NotBlank(message = "Category is mandatory")
     @Column(nullable = false)
     private String category;
+
+    @Enumerated(EnumType.STRING)
+    private ReadingStatus status;
+
 }
